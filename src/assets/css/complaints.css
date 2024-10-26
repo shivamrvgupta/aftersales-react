@@ -1,0 +1,136 @@
+/* ComplaintList.css */
+  
+  .filter-container {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-button {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background: #f3f4f6;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-button:hover {
+    background: #e5e7eb;
+  }
+  
+  /* Status-specific colors */
+  .filter-button.all.active { background: #22c55e; color: white; }
+  .filter-button.open.active { background: #fb923c; color: white; }
+  .filter-button.in-progress.active { background: #60a5fa; color: white; }
+  .filter-button.on-hold.active { background: #fbbf24; color: white; }
+  .filter-button.re-open.active { background: #a855f7; color: white; }
+  .filter-button.cancelled.active { background: #ec4899; color: white; }
+  .filter-button.closed.active { background: #22c55e; color: white; }
+  .filter-button.escalated.active { background: #ef4444; color: white; }
+  
+ 
+  
+  .search-container {
+    position: relative;
+  }
+  
+  .search-input {
+    padding: 8px 16px 8px 40px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    width: 300px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+  }
+  
+ 
+
+  
+  .status-tag {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+  }
+  
+  .status-tag.open { background: #fed7aa; color: #9a3412; }
+  .status-tag.in-progress { background: #bfdbfe; color: #1e40af; }
+  .status-tag.on-hold { background: #fef08a; color: #854d0e; }
+  .status-tag.re-open { background: #e9d5ff; color: #6b21a8; }
+  .status-tag.cancelled { background: #fbcfe8; color: #9d174d; }
+  .status-tag.closed { background: #bbf7d0; color: #166534; }
+  .status-tag.escalated { background: #fecaca; color: #991b1b; }
+  
+  .staff-status {
+    color: #16a34a;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  
+  .edit-button { color: #2563eb; }
+  .delete-button { color: #dc2626; }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .pagination-info {
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .page-button {
+    padding: 6px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .page-button:hover {
+    background: #f9fafb;
+  }
+  
+  .page-button.active {
+    background: #3b82f6;
+    color: white;
+    border-color: #3b82f6;
+  }
+
+
+  .staff-status.assigned {
+    color: green; 
+  }
+  
+  .staff-status.not-assigned {
+    color: red;
+  }
